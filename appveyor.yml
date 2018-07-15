@@ -31,7 +31,7 @@ build_script:
 - cmd: >-
     set MAVEN_HOME="C:\maven\apache-maven-3.3.9"
     mvn -v
-    mvn clean package -U -Dmaven.javadoc.skip=true
+    mvn clean package -U -Dmaven.javadoc.skip=true -Dmaven.test.skip.exec 
     mv \target\hp-application-automation-tools-plugin.hpi \target\hp-application-automation-tools-plugin-{build}.hpi
 test: off
 
