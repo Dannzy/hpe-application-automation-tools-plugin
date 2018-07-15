@@ -39,7 +39,7 @@ build_script:
 test: off
 on_finish:
 
-- cmd: mv \target\hp-application-automation-tools-plugin.hpi \target\hp-application-automation-tools-plugin-{build}.hpi
+- cmd: mv C:\projects\hpe-application-automation-tools-plugin\target\hp-application-automation-tools-plugin.hpi C:\projects\hpe-application-automation-tools-plugin\target\hp-application-automation-tools-plugin-%APPVEYOR_BUILD_VERSION%.hpi
 
 artifacts:
 - path: '\target\hp-application-automation-tools-plugin.hpi'
